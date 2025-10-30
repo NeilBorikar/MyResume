@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Neil Borikar — Home</title>
+  <meta name="description" content="Neil Manoj Borikar - AI & ML developer. Portfolio home." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav-wrap">
+    <div class="nav-inner container">
+      <a class="brand" href="index.html">Neil Borikar</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn ghost" href="https://github.com/NeilBorikar" target="_blank">GitHub</a>
+        <button id="themeToggle" title="Toggle theme">🌗</button>
+        <button class="burger" id="burgerBtn">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <canvas id="heroCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-inner container">
+      <div class="hero-left">
+        <h1>Neil <span>Manoj</span> Borikar</h1>
+        <p class="lead">AI & Machine Learning | Full-Stack Data Systems | Creative Problem Solver</p>
+        <div class="cta-row">
+          <a class="btn primary" href="projects.html">View Projects</a>
+          <a class="btn outline" href="contact.html">Contact</a>
+        </div>
+        <ul class="quick-meta">
+          <li>📍 Shah & Anchor Kutchhi Engineering College</li>
+          <li>💼 Open to internships & collabs</li>
+        </ul>
+        <div class="socials">
+          <a href="https://github.com/NeilBorikar" target="_blank">GitHub</a> •
+          <a href="https://www.linkedin.com/in/neil-borikar-7179b6323/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="card-3d">
+          <div class="card-bg"></div>
+          <div class="card">
+            <div class="card-head">
+              <h3>Featured Project</h3>
+              <span class="tag">AI · Smart Systems</span>
+            </div>
+            <h2>GUTBOT — Health Assistant</h2>
+            <p class="muted">Hybrid intent recognition + clinical entity extraction + safe response generation.</p>
+            <div class="card-foot">
+              <span>Python • BERT • Flask</span>
+              <a class="link" href="projects.html">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <svg class="hero-decor" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,0 C400,120 800,0 1200,120 L1200,0 L0,0 Z"></path></svg>
+  </section>
+
+  <!-- QUICK LINKS / HIGHLIGHTS -->
+  <section class="section container">
+    <div style="display:flex;gap:18px;flex-wrap:wrap;align-items:stretch;">
+      <div class="card" style="flex:1">
+        <h3>Latest</h3>
+        <p>Deployed WasteReborn & Train Congestion projects. Continuous open-source work on GitHub.</p>
+        <a href="projects.html" class="link-cta">See projects →</a>
+      </div>
+
+      <div class="card" style="width:300px">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:neilborikar25@gmail.com">neilborikar25@gmail.com</a></p>
+        <a href="contact.html" class="btn ghost">Say Hello</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="foot-left">© 2025 Neil Manoj Borikar</div>
+      <div class="foot-right">Built with ❤️ • Hosted on GitHub Pages</div>
+    </div>
+  </footer>
+
+  <!-- Project modal (shared) -->
+  <div id="projModal" class="modal" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+</body>
+</html>

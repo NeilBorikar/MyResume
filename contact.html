@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Neil Borikar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header class="nav-wrap">
+    <div class="nav-inner container">
+      <a class="brand" href="index.html">Neil Borikar</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn ghost" href="https://github.com/NeilBorikar" target="_blank">GitHub</a>
+        <button id="themeToggle">🌗</button>
+        <button class="burger" id="burgerBtn">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="section contact container">
+    <div class="contact-inner">
+      <div class="contact-left">
+        <h2>Let’s build something</h2>
+        <p>Reach out for internships, collaborations, or feedback.</p>
+        <p><strong>Email:</strong> <a href="mailto:neilborikar25@gmail.com">neilborikar25@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/neil-borikar-7179b6323/" target="_blank">Neil Borikar</a></p>
+      </div>
+
+      <form class="contact-form" id="contactForm" onsubmit="return contactSubmit(event)">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Your email" required />
+        <textarea name="message" rows="6" placeholder="Tell me about the project..." required></textarea>
+        <div class="form-row">
+          <button class="btn primary" type="submit">Send Message</button>
+          <button class="btn ghost" type="button" onclick="copyEmail()">Copy Email</button>
+        </div>
+        <div id="formMsg" class="muted small"></div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">© 2025 Neil Manoj Borikar</div>
+  </footer>
+</body>
+</html>
