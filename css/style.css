@@ -1,25 +1,44 @@
 /* MyResume — Ultra polished UI */
 /* Fonts: Poppins loaded in HTML */
-:root{
-  --bg:#0f1724; /* dark night for hero */
-  --card:#0b1220;
-  --accent1:#00D47A; /* neon green */
-  --accent2:#6E7BFF; /* electric indigo */
-  --muted:#94A3B8;
-  --glass: rgba(255,255,255,0.04);
-  --white: #F8FAFF;
+:root {
+  --bg: #f7f9fb;
+  --card: #ffffff;
+  --accent1: #00aaff;
+  --accent2: #33cc66;
+  --muted: #080808fc;
+  --glass: rgba(202, 151, 198, 0.89);
+  --white: #25cccc;
   --container: 1200px;
-  --radius:14px;
+  --radius: 14px;
 }
+
 
 /* reset */
 *{box-sizing:border-box}
 html,body{height:100%}
-body{
-  margin:0;font-family:"Poppins",system-ui,-apple-system;line-height:1.5;
-  color:var(--muted); background:linear-gradient(180deg,#071029 0%, #0b1220 50%, #02040a 100%); -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
+body {
+  margin: 0;
+  font-family: 'Poppins',sans-serif;
+  line-height: 1.5;
+  color: var(--muted);
+  background: linear-gradient(180deg, #f4faff 0%, #ffffff 60%, #e6f6ff 100%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+.card, .proj-card, .about-card, .stat {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.nav-inner {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+}
+.nav-links a:hover {
+  color: var(--accent1);
+}
+
+
 
 /* layout */
 .container{max-width:var(--container);margin:0 auto;padding:0 22px}
