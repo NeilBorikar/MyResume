@@ -57,7 +57,11 @@ body {
 .burger{display:none;background:transparent;border:0;color:var(--muted);font-size:1.2rem}
 
 /* HERO */
-.hero{min-height:86vh;position:relative;display:flex;align-items:center;padding:120px 0 60px;overflow:hidden}
+.hero{min-height:86vh;position:relative;display:flex;align-items:center;padding:120px 0 60px;overflow:hidden;background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.75) 0%,
+    rgba(240,248,255,0.75) 100%
+  );}
 .hero-canvas{position:absolute;inset:0;width:100%;height:100%;z-index:0;opacity:.55;filter:blur(8px)}
 .hero-inner{position:relative;z-index:2;display:flex;gap:40px;align-items:stretch;justify-content:space-between;padding:0 22px}
 .hero-left{flex:1;max-width:640px}
